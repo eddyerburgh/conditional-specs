@@ -1,0 +1,41 @@
+{
+  "name": "conditional-specs",
+  "version": "1.0.0",
+  "description": "Conditional spec methods for Jest and Mocha",
+  "main": "index.js",
+  "files":[
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier *.js --write",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyerburgh/conditional-specs.git"
+  },
+  "keywords": [
+    "conditional specs",
+    "mocha",
+    "conditional mocha",
+    "jest",
+    "conditional jest"
+  ],
+  "author": "Edd Yerburgh",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "jest": "^22.4.3",
+    "mocha": "^5.1.1",
+    "prettier": "1.12.1",
+    "semantic-release": "^15.4.1"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setup.js"
+  },
+  "release": {
+    "branch": "next"
+  }
+}
