@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "format": "prettier *.js --write",
+    "publish": "semantic-release",
     "test": "jest"
   },
   "repository": {
@@ -34,8 +35,5 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setup.js"
-  },
-  "release": {
-    "branch": "next"
   }
 }
