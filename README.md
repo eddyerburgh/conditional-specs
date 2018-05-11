@@ -68,13 +68,19 @@ describeSkipIf.skip(process.env.TEST_ENV === 'browser', '#find()', () => {
 ## API
 
 `itDoNotRunIf(condition, name, fn)`
+
 `itRunIf(condition, name, fn)`
+
 `itDoNotSkipIf(condition, name, fn)`
+
 `itSkipIf(condition, name, fn)`
 
 `describeDoNotRunIf(condition, name, fn)`
+
 `describeRunIf(condition, name, fn)`
+
 `describeDoNotSkipIf(condition, name, fn)`
+
 `describeSkipIf(condition, name, fn)`
 
 ## Why?
