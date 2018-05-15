@@ -48,23 +48,13 @@ function skipIfFactory(method, reverse) {
   return fn;
 }
 
-var itRunIf = runIfFactory(it);
-var itDoNotRunIf = runIfFactory(it, true);
-var describeRunIf = runIfFactory(describe);
-var describeDoNotRunIf = runIfFactory(describe, true);
-
-var itSkipIf = skipIfFactory(it);
-var itDoNotSkipIf = skipIfFactory(it, true);
-var describeSkipIf = skipIfFactory(describe);
-var describeDoNotSkipIf = skipIfFactory(describe, true);
-
 module.exports = {
-  itDoNotRunIf,
-  itRunIf,
-  itSkipIf,
-  itDoNotSkipIf,
-  describeRunIf,
-  describeDoNotRunIf,
-  describeSkipIf,
-  describeDoNotSkipIf
+  itRunIf: runIfFactory(it),
+  itDoNotRunIf: runIfFactory(it, true),
+  itSkipIf: skipIfFactory(it),
+  itDoNotSkipIf: skipIfFactory(it, true),
+  describeRunIf: runIfFactory(describe),
+  describeDoNotRunIf: runIfFactory(describe, true),
+  describeSkipIf: skipIfFactory(describe),
+  describeDoNotSkipIf: skipIfFactory(describe, true)
 };
