@@ -1,9 +1,9 @@
 {
   "name": "conditional-specs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Conditional spec methods for Jest and Mocha",
   "main": "index.js",
-  "files":[
+  "files": [
     "index.js"
   ],
   "scripts": {
